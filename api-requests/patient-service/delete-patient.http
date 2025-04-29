@@ -1,0 +1,4 @@
+### Creates a new patient entity
+DELETE http://localhost:4000/patient/d35a47ae-9457-40bc-ae9c-0c6ad5c90287
+
+###

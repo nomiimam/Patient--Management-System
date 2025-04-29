@@ -18,15 +18,13 @@ public class PatientMapper {
         return patientDTO;
     }
 
-    public static Patient toModel(PatientRequestDTO patientDTO) {
+    public static Patient toModel(PatientRequestDTO patientRequestDTO) {
         Patient patient = new Patient();
-        patient.setName(patientDTO.getName());
-        patient.setAddress(patientDTO.getAddress());
-        patient.setEmail(patientDTO.getEmail());
-        patient.setDateOfBirth(LocalDate.parse(patientDTO.getDateOfBirth()));
-        patient.setRegisteredDate(LocalDate.parse(patientDTO.getRegisteredDate()));
-
+        patient.setName(patientRequestDTO.getName());
+        patient.setAddress(patientRequestDTO.getAddress());
+        patient.setEmail(patientRequestDTO.getEmail());
+        patient.setDateOfBirth(LocalDate.parse(patientRequestDTO.getDateOfBirth()));
+        patient.setRegisteredDate(LocalDate.parse(patientRequestDTO.getRegisteredDate()));
         return patient;
     }
-
 }
